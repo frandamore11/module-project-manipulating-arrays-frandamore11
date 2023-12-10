@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  <h1>Manipulating Arrays Solution</h1>
+  <h1>Manipulating Arrays Solution - Fran</h1>
   <p>Please load this file in VSCode and Chrome, and open the Console in Chrome Dev Tools.</p>
   <p>Work through the challenges found inside the script tag in this document,
     until the Console reports all tests passing.</p>
@@ -30,9 +30,37 @@
     // ❗ Notes:
     // 🧠 There are many ways to solve this, but practice using a for loop to iterate over the array.
     // 🧠 As you have done in the past, declare a variable before you start looping, to accumulate the result.
+    
+    // nums = []
     function sumNumsFor(nums) {
 
+      let sum = 0
+
+      for ( let i = 0; i < nums.length; i++) {
+        
+        if (nums.length === 0) {
+
+          return 0
+
+        } else if (typeof nums[i] !== 'number'){
+
+          nums[i] === 0
+
+        } else if (nums[i] === 13) {
+
+          return "I'm too superstitious!"
+
+        }else {
+          let numbers = nums[i]
+          sum += numbers
+        }
+        
+      }
+
+      return sum
+
     }
+
 
     // 👉 CHALLENGE 2
     // 🧠 The function stripVowels takes a string, strips all lowcase vowel letters (a,e,i,o,u) from it and returns it.
@@ -40,8 +68,25 @@
     // stripVowels('Lady Gaga') // should return 'Ldy Gg'
     // ❗ Notes:
     // 🧠 There are many ways to solve this, but practice using a for loop to iterate over the characters of the string.
+    
     function stripVowels(str) {
 
+      joinChars = ''
+
+      for (let i = 0; i < str.length; i++) { 
+        let char = str[i]
+
+        if (char === 'a' | char === 'e' | char === 'i' | char === 'o' | char === 'u') { 
+          char = ''
+        } else {
+          char
+        }
+
+        joinChars += char
+
+      }
+
+      return joinChars
     }
 
     // 👉 CHALLENGE 3
